@@ -13,8 +13,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">类型</label>
         <div class="layui-input-block">
-            <input type="radio" name="types" value="1" title="博文"  {{if .post.Types}} checked {{end}}>
-            <input type="radio" name="types" value="0" title="下载"  {{if .post.Types}} {{else}} checked {{end}}>
+            <input type="radio" name="types" value="1" title="博文" {{if .post.Types}} {{else}} checked {{end}}>
         </div>
     </div>
 
@@ -25,17 +24,6 @@
         </div>
     </div>
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">类别</label>
-        <div class="layui-input-block">
-            <select name="cate_id" lay-verify="required">
-                <option value=""></option>
-                {{range .categorys}}
-                <option value="{{.Id}}" >{{.Name}}</option>
-                {{end}}
-            </select>
-        </div>
-    </div>
 
     <div class="layui-form-item">
         <label class="layui-form-label">加入首页</label>
